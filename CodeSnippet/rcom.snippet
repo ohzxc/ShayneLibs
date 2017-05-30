@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>rcom</Title>
+			<Shortcut>rcom</Shortcut>
+			<Description>路由命令 语句的代码片段</Description>
+			<Author>Shayne</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>type</ID>
+					<ToolTip>支持该命令类型</ToolTip>
+					<Default>Button</Default>
+				</Literal>
+				<Literal>
+					<ID>command</ID>
+					<ToolTip>命令名</ToolTip>
+					<Default>myCommand</Default>
+				</Literal>
+				<Literal>
+					<ID>text</ID>
+					<ToolTip>此属性文本</ToolTip>
+					<Default>command</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[public static readonly RoutedUICommand $command$ = new RoutedUICommand("$text$", "$command$", typeof($type$));$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
